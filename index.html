@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dark"></div>
+    <main>
+        <section>
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+                <p>보스 시간 저장</p>
+            </div>
+            <select id="monsterSelect" required>
+                <option value="" selected>==========</option>
+            <optgroup label="===MVP===">
+                <option value="미스트레스">미스트레스</option>
+                <option value="프리오니">프리오니</option>
+                <option value="에드가">에드가</option>
+                <option value="크라켄">크라켄</option>
+                <option value="마야">마야</option>
+                <option value="오크 히어로">오크 히어로</option>
+                <option value="파라오">파라오</option>
+                <option value="오크 로드">오크 로드</option>
+                <option value="아몬 라">아몬 라</option>
+                <option value="도플갱어">도플갱어</option>
+                <option value="모로크">모로크</option>
+                <option value="타임홀더">타임홀더</option>
+            </optgroup>
+            <optgroup label="===Mini===">
+                <option value="드래곤 플라이">드래곤 플라이</option>
+                <option value="이클립스">이클립스</option>
+                <option value="고스트링">고스트링</option>
+                <option value="마스터링">마스터링</option>
+                <option value="킹 드라모">킹 드라모</option>
+                <option value="토드">토드</option>
+                <option value="데빌링">데빌링</option>
+                <option value="엔젤링">엔젤링</option>
+                <option value="다크 프리스트">다크 프리스트</option>
+                <option value="떠돌이 늑대">떠돌이 늑대</option>
+                <option value="키메라">키메라</option>
+                <option value="미스틸테인">미스틸테인</option>
+            </optgroup>
+        </select>
+
+        <div class="timeInput">
+            <input type="number" id="hours" placeholder="시">
+            <input type="number" id="minutes" placeholder="분">
+            <input type="number" id="seconds" placeholder="초">
+        </div>
+        <div class="btnSet">
+            <button id="timeAddBtn">추가</button>
+            <button id="zerobase">삭제</button>
+            <p>&sect; 삭제는 오래된거부터! &sect;</p>
+        </div>
+        
+
+        <table class="timeTable">
+            <thead>
+                <tr>
+                    <th>Boss</th>
+                    <th>남은 시간 (출현 시간)</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                
+            </tbody>        
+        </table>
+        </section>       
+    </main>
+
+    <script src="/script.js"></script>
+
+
+</body>
+</html>
